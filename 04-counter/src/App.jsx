@@ -48,14 +48,14 @@ export default function App() {
               "border": "1px solid black",
               "backgroundColor": rightBoxColour
             }}
-            onClick={() => {
-              if (prevCount < 10) {
-                clickUp()
-                setRightBoxColour("green")
-              } else {
-                setRightBoxColour("red")
-              }
-            }}
+              onClick={() => {
+                if (prevCount < 10) {
+                  clickUp()
+                  setRightBoxColour("green")
+                } else {
+                  setRightBoxColour("red")
+                }
+              }}
               onMouseLeave={() => {
                 setRightBoxColour("blue")
               }}
@@ -63,10 +63,16 @@ export default function App() {
             </div>
           </td>
           <td>
-            {prevCount}
+            <div style={{
+              "fontSize": `${20 + prevCount * 2}px`,
+            }}
+            >
+              {prevCount}
+            </div>
           </td>
         </tr>
       </table>
+      {prevCount % 2 == 0 ? <p>Number is even</p> : null}
     </>
   )
 }
