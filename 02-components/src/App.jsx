@@ -1,22 +1,13 @@
 
 import Alert from "./Alert"
+import BorderImageFrame from "./BorderImageFrame"
+import sayHello from "./sayHello"
 import apples from "./assets/apples.jpg"
 import oranges from "./assets/oranges.jpg"
 import cherries from "./assets/cherries.jpg"
 import kiwis from "./assets/kiwis.jpg"
 
-
 export default function App() {
-
-  function sayHello() {
-    return <h2>Hello How Are You?</h2>
-  }
-
-  function BorderImageFrame(props) {
-    return (
-      <img src={props.picture}/>
-    )
-  }
 
   return (
     <>
