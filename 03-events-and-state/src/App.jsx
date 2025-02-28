@@ -26,14 +26,13 @@ export default function App() {
       }}
         onClick={boxClicked}
         onMouseEnter={() => {
-          setColour( "red"),
+          setColour( "red")
           console.log("Mouse enters the box")
         }}
         onMouseLeave={() => {
-          setColour( "blue"),
+          setColour( "blue")
           console.log("Mouse out of the box")
         }}
-
       >
         {count}
       </div>
